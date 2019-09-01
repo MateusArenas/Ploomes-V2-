@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!doctype html>
+ 
+<!-- ESPECIFICANDO NOSSO MÓDULO ANGULAR listaContatos -->
+<html ng-app="master">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <!-- Otimizar a exibição em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Lista de Contatos</title>
+ 
+    <!-- CSS -->
+    <!-- Carregando o bootstrap-->
+    <link rel="stylesheet" href="./styles.css">
+  
+ 
+    <!-- JS -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="angularApp.js"></script>
+    <script src="masterApp.js"></script>
+ 
+</head>
+<!-- DEFINE O CONTROLLER E BUSCA TODOS OS CONTATOS -->
+<body >
+    <div class="app" ng-controller="masterCtrl">
+        <div class="h-component" ng-include="'./components/Header/index.html'">
+            
+        </div>
+        <div class="body" >
+            <div class="b-menu" style="width: 241px; height: 100%;" ng-include="'./components/Menu/index.html'"></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

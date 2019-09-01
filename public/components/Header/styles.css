@@ -1,0 +1,27 @@
+
+.header{
+    width: 100%;
+    height: 70px;
+    padding: 6px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.h-menu-colapse{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+    padding: 12px;
+    -webkit-transition: background-color 0.4s; /* Safari prior 6.1 */
+    transition: background-color .4s;
+}
+.h-menu-colapse:hover{
+    background-color: rgba(0, 0, 0, .1);
+}
+.h-logo{
+    width: 119px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .1);
+}

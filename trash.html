@@ -1,0 +1,11 @@
+<h4 ng-bind="app"></h4>
+    <h4>{{app}}</h4>
+    <ul>
+        <li ng-repeat="contato in contatos" ng-bind="contato.nome"> </li>
+    </ul>
+    <input type="email" ng-model="contato.email">
+    {{email}}
+    <button ng-click="adicionarContato(contato)" ng-disabled="!email">add contact</button>
+    <select ng-model="contato.operadora" ng-options="operadora.nome for operadora in operadoras">
+        <option value="">Selecione uma operadora</option>
+    </select>
